@@ -1,0 +1,13 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled 
+  - override hydra/job_logging: disabled
+
+seed: 0
+max_iter: 1000
+model_dir: /work3/jovje/model-permutation/experiments/resnet/01_mnist/models_resnet
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

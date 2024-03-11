@@ -1,0 +1,17 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled 
+  - override hydra/job_logging: disabled
+
+seed: 0
+num_points: 50
+num_levels: 50
+llh: true
+model_dir: experiments/mlp/01_mnist/models_mlp
+plot_destination: experiments/mlp/01_mnist
+plot_name: landscape.pdf
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

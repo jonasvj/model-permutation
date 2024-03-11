@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled 
+  - override hydra/job_logging: disabled
+
+stats_ensemble: experiments/mlp/01_mnist/stats_mlp_mnist_ensemble.csv
+stats_dirichlet: experiments/mlp/01_mnist/stats_mlp_mnist_dirichlet.csv
+
+plot_destination: experiments/mlp/01_mnist
+plot_name: stats_mlp_mnist.pdf
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

@@ -1,0 +1,9 @@
+class: ResNet
+
+hparams:
+  depth: 22
+  widen_factor: 32
+  dropout_rate: 0.
+  num_classes: 10
+  pool_kernel_size: 8
+  prior_scale: 1.

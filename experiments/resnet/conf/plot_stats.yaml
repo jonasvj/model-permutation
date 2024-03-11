@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled 
+  - override hydra/job_logging: disabled
+
+stats_ensemble: experiments/resnet/01_mnist/stats_resnet_mnist_ensemble.csv
+stats_dirichlet: experiments/resnet/01_mnist/stats_resnet_mnist_dirichlet.csv
+
+plot_destination: experiments/resnet/01_mnist
+plot_name: stats_resnet_mnist.pdf
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

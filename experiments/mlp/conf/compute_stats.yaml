@@ -1,0 +1,21 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled 
+  - override hydra/job_logging: disabled
+
+seed: 0
+conc_min: 2e-3
+conc_max: 5
+num_conc: 25
+num_samples: 30
+num_repetitions: 10
+
+model_dir: experiments/mlp/01_mnist/models_mlp
+stats_destination: experiments/mlp/01_mnist
+stats_name_ensemble: stats_ensemble.csv
+stats_name_dirichlet: stats_dirichlet.csv
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

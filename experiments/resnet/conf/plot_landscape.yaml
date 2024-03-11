@@ -1,0 +1,17 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled 
+  - override hydra/job_logging: disabled
+
+seed: 0
+num_points: 25
+num_levels: 50
+llh: true
+model_dir: /work3/jovje/model-permutation/experiments/resnet/01_mnist/models_resnet
+plot_destination: experiments/resnet/01_mnist
+plot_name: landscape_mlp_mnist.pdf
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

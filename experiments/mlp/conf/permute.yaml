@@ -1,0 +1,14 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled 
+  - override hydra/job_logging: disabled
+
+seed: 0
+num_layers: 4
+max_iter: 1000
+model_dir: experiments/mlp/01_mnist/models_mlp
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

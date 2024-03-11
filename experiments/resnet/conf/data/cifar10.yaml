@@ -1,0 +1,8 @@
+defaults:
+  - data_defaults
+  - _self_
+
+class: CIFAR10
+
+hparams:
+  data_augmentation: true

@@ -1,0 +1,21 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled 
+  - override hydra/job_logging: disabled
+
+seed: 0
+conc_min: 2e-3
+conc_max: 5
+num_conc: 13
+num_samples: 15
+num_repetitions: 5
+
+model_dir: /work3/jovje/model-permutation/experiments/resnet/01_mnist/models_resnet
+stats_destination: experiments/resnet/01_mnist
+stats_name_ensemble: stats_ensemble.csv
+stats_name_dirichlet: stats_dirichlet.csv
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

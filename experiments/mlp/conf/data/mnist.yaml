@@ -1,0 +1,5 @@
+defaults:
+  - data_defaults
+  - _self_
+
+class: MNIST

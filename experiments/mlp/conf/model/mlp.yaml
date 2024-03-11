@@ -1,0 +1,5 @@
+class: MLP
+
+hparams:
+  input_dim: 784
+  prior_scale: 1.

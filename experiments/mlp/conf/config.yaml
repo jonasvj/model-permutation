@@ -1,0 +1,18 @@
+defaults:
+  - data: mnist
+  - model: mlp
+  - _self_
+  - override hydra/hydra_logging: disabled 
+  - override hydra/job_logging: disabled
+
+seed: 0
+lr: 1e-3
+num_epochs: 100
+
+model_dir: experiments/mlp
+model_name: model.pt
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .
